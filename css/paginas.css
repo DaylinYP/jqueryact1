@@ -1,0 +1,274 @@
+header {
+    text-align: left;
+    color: white;
+    font-size: 35px;
+    text-shadow: 4px 2px #000000;
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 80px;
+    width: 100%;
+}
+
+nav ul {
+    float: left;
+    margin-left: 30px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+li a.active,
+li a:hover {
+    background-color: white;
+    color: black;
+    transition: 0.5;
+}
+
+.check_btn {
+    font-size: 30px;
+    color: white;
+    float: left;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+
+    /*PAGINA 1*/
+}
+
+#pagina1 {
+    background-image: linear-gradient(to left, rgb(61, 118, 126), rgb(2, 47, 90));
+    margin: 50px;
+
+}
+
+#botones {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    border-radius: 10px 10px;
+    background-color: rgb(81, 81, 83);
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+
+}
+
+.btn:hover {
+    background-color: rgb(4, 41, 90);
+    color: white;
+}
+
+p {
+    border-radius: 10px 10px;
+    background-color: rgb(255, 197, 39);
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    width: 180px;
+    box-shadow: 5px 5px;
+    margin-top: 20px;
+    font-size: 15px;
+    text-align: center;
+    text-shadow: 1px 0px 1px;
+}
+
+p:hover {
+    background-color: rgb(173, 137, 37);
+    color: rgb(255, 255, 255);
+}
+
+#parrafos1,
+#parrafos2,
+#parrafos3,
+#parrafos4 {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+}
+
+#pgeneral {
+    margin-left: 40px;
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 350px;
+    border-radius: 55px 0px 55px 0px;
+    padding-left: 50px;
+}
+
+/*PAGINA 2*/
+
+#pagina2 {
+    background-image: linear-gradient(to left, black, rgb(79, 67, 67));
+    margin: 50px;
+}
+
+#btnAgregar,
+#btnEliminar {
+    background-color: rgb(153, 2, 85);
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 10px 0px 10px 0px;
+    box-shadow: 8px 1px 10px 1px;
+
+}
+
+#btnEliminar:hover {
+    background-color: white;
+    color: rgb(83, 3, 47);
+}
+
+#btnAgregar:hover {
+    background-color: white;
+    color: rgb(83, 3, 47);
+}
+
+#botonesAYE {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+table {
+    background-color: rgb(15, 14, 14);
+    color: rgb(255, 255, 255);
+    border-collapse: collapse;
+    font-size: 16px;
+    width: 100%;
+}
+
+th {
+    margin: 15px;
+    padding: 8px;
+}
+
+td {
+    margin: 15px;
+    padding: 15px;
+    border: rgb(114, 2, 58) 5px solid;
+    text-align: center;
+
+}
+
+/*PAGINA 3*/
+#pagina3 {
+    background-image: linear-gradient(to left, black, rgb(79, 67, 67));
+    margin: 50px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+::-webkit-input-placeholder {
+    color: #ffffff;
+}
+
+.wrapper {
+    position: relative;
+    width: 450px;
+    height: 70vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-shadow: 0 0 50px 0 rgb(135, 5, 211);
+    background-color: rgba(0, 0, 0, 0.6);
+    margin-right: 90px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#inp1, #inp2, #inp3, #nombreIngresado{
+    padding-bottom: 10px;
+    border-bottom: 2px solid #eee;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin-left: 90px;
+    cursor: pointer;
+    color: white;
+}
+
+.input {
+    border: none;
+    outline: none;
+    background: none;
+    width: 250px;
+    margin-top: 40px;
+    padding-right: 10px;
+    font-size: 17px;
+}
+
+.submit {
+    border: none;
+    outline: none;
+    width: 150px;
+    margin-top: 25px;
+    margin-left: 100px;
+    padding: 10px 0;
+    font-size: 14px;
+    color: white;
+    border-radius: 40px;
+    letter-spacing: 10x;
+    cursor: pointer;
+    background: linear-gradient(45deg, rgb(82, 66, 173), rgb(55, 4, 89));
+}
+
+.submit:hover {
+    background: linear-gradient(45deg, rgb(59, 54, 87), rgb(35, 2, 63));
+}
+#respuesta, #resultado, #aprobacion{
+    color: white;
+    font-size: 19px;
+    text-align: center;
+}
+
+footer{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 18px;
+    border-radius: 25px 0px;
+}

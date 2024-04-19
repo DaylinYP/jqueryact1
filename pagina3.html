@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 3</title>
+    <link rel="stylesheet" href="css/paginas.css">
+    <script src="js/pagina3.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+</head>
+
+<body id="pagina3">
+
+    <nav>
+        <input type="checkbox" name="" id="check">
+        <label for="check" class="check_btn">
+            <span id="menu-abrir" class="list_icon">&#9776;</span>
+        </label>
+
+
+        <ul class="">
+            <li class="">
+                <header>
+                    <h1>jQUERY</h1>
+                </header>
+            </li>
+            <li class="active"><a href="pagina1.html" class="links">Página 1</a></li>
+            <li class=""><a href="pagina2.html" class="links">Página 2</a></li>
+            <li class=""><a href="pagina3.html" class="links">Página 3</a></li>
+
+        </ul>
+    </nav>
+
+    <div class="body">
+        <div class="wrapper">
+            <form class="form">
+                <div id="inp">
+                    <input type="text"id="nombreIngresado" class="input" placeholder="Ingrese su nombre">
+                </div>
+
+                <div>
+                    <input type="number" class="input" id="inp1" placeholder="Ingrese la primera nota">
+
+                    <input type="number" class="input" id="inp2" placeholder="Ingrese la segunda nota">
+
+                    <input type="number" class="input" id="inp3" placeholder="Ingrese la tercera nota">
+                </div>
+                <button type="button" id="texto-cont" onclick="mostrarCaracteres()" class="submit">Largo del texto</button>
+                <button type="button" id="promedio" onclick="calcularPromedio()" class="submit">Promedio</button>
+
+            </form>
+        </div>
+    </div>
+
+    <div id="respuesta"></div>
+
+    <div id="resultado"></div>
+    <div id="aprobacion"></div>
+
+<script>
+    $(document).ready(function () {
+
+$("#texto-cont").click(function(){
+    $("#respuesta").show()
+});
+$("#promedio").click(function(){
+    $("resultado").show()
+});
+})
+</script>
+
+<footer>
+    Creado por Daylin Yol
+</footer>
+</body>
+
+</html>

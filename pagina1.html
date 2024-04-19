@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 1</title>
+    <link rel="stylesheet" href="css/paginas.css">
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/pagina1.js"></script>
+</head>
+
+<nav class="navbar">
+    <input type="checkbox" name="" id="check">
+    <label for="check" class="check_btn">
+        <span id="menu-abrir" class="list_icon">&#9776;</span>
+    </label>
+
+
+    <ul class="">
+        <li class="">
+            <header>
+                <h1>jQUERY</h1>
+            </header>
+        </li>
+        <li class="active"><a href="pagina1.html" class="links">Página 1</a></li>
+        <li class=""><a href="pagina2.html" class="links">Página 2</a></li>
+        <li class=""><a href="pagina3.html" class="links">Página 3</a></li>
+
+    </ul>
+</nav>
+<br><br>
+
+
+<body id="pagina1">
+    <div id="botones" class="botones">
+        <button id="btnMostrar"class="btn">Mostrar</button>
+        <button id="btnOcultar" class="btn">Ocultar</button>
+        <button id="btnOcultarDespacio" class="btn">Ocultar despacio</button>
+        <button id="btnMostrarDespacio" class="btn">Mostrar despacio</button>
+        <button id="btnOcultarSlide" class="btn">Ocultar con slide</button>
+        <button id="btnMostrarSlide" class="btn">Mostrar con slide</button>
+    </div>
+    <br><br>
+<section id="pgeneral">
+    <div id="parrafos1">
+        <p id="p1">PÁRRAFO 1</p>
+        <p id="p2">PÁRRAFO 2</p>
+        <p id="p3">PÁRRAFO 3</p>
+        <p id="p4">PÁRRAFO 4</p>
+        <p id="p5">PÁRRAFO 5</p>
+    </div>
+    <div id="parrafos2">
+        <p id="">PÁRRAFO 6</p>
+        <p id="">PÁRRAFO 7</p>
+        <p id="">PÁRRAFO 8</p>
+        <p id="">PÁRRAFO 9</p>
+        <p id="">PÁRRAFO 10</p>
+
+    </div>
+    <div id="parrafos3">
+        <p id="">PÁRRAFO 11</p>
+        <p id="">PÁRRAFO 12</p>
+        <p id="">PÁRRAFO 13</p>
+        <p id="">PÁRRAFO 14</p>
+        <p id="">PÁRRAFO 15</p>
+    </div>
+    <div id="parrafos4">
+        <p id="">PÁRRAFO 16</p>
+        <p id="">PÁRRAFO 17</p>
+        <p id="">PÁRRAFO 18</p>
+        <p id="">PÁRRAFO 19</p>
+        <p id="">PÁRRAFO 20</p>
+    </div>
+</section>
+    
+  <!--- $(document).ready(function () {
+    //codigo (variables, métodos, etc de jquery)
+    $("#btn_mostrar").click(function () {//cuando se le de clic al boton_mostrar va a hacer la siguiente función
+       $("p").show();//Show es mostrar
+   });
+    $("#btn_ocultar").click(function () {
+        $("p").hide();//hide es mostrar
+    });
+    $("#btn_mostrar_despacio").click(function () {//cuando se le de clic al boton_mostrar va a hacer la siguiente función
+        //.show ("slow") o colocar tiempo en milisegundos
+        //1000= 1 segundo
+        $("p").show(3000);
+
+    });
+    $("#btn_ocultar_despacio").click(function () {
+        $("p").hide(slow);
+        //$("#p7").show(500);//Que solo se muestre el p7
+    });
+    $("#btn_ocultar_slide").click(function () {
+        $("p").slideUp(2000);//Desliza hacia arriba el elemento segun el tiempo que se le asigne
+    });
+    $("#btn_mostrar_slide").click(function () {
+        $("p").slideDown(2000);//Desliza hacia abajo los elementos segun el tiempo que se le asigne
+
+    });
+});
+    </script>--> 
+
+    <footer>
+        Creado por Daylin Yol
+    </footer>
+</body>
+
+</html>

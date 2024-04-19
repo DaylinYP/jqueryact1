@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 2</title>
+    <link rel="stylesheet" href="css/paginas.css">
+    <script src="js/jquery-3.7.1.min.js"></script>
+</head>
+
+<body id="pagina2">
+    <nav>
+        <input type="checkbox" name="" id="check">
+        <label for="check" class="check_btn">
+            <span id="menu-abrir" class="list_icon">&#9776;</span>
+        </label>
+
+
+        <ul>
+            <li>
+                <header>
+                    <h1>jQUERY</h1>
+                </header>
+            </li>
+            <li><a href="pagina1.html">Página 1</a></li>
+            <li><a href="pagina2.html">Página 2</a></li>
+            <li><a href="pagina3.html">Página 3</a></li>
+
+        </ul>
+    </nav>
+    <br><br><br>
+    <div id="botonesAYE" class="botonPagina2">
+        <button id="btnAgregar" class="botonA">Agregar Fila</button>
+        <button id="btnEliminar" class="botonA">Eliminar Fila</button>
+    </div>
+
+
+
+    <br><br><br><br>
+    <table style="border: 4px solid rgb(114, 2, 58);">
+        <thead>
+            <tr>
+                <th>Carné</th>
+                <th>Nombre</th>
+                <th>Correo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>5290-24-10211</td>
+                <td>Soyel Inventado</td>
+                <td>soyel@micorreo.com.gt</td>
+            </tr>
+            <tr>
+                <td>5290-24-90877</td>
+                <td>Soyla Nueva</td>
+                <td>soyla@micorreo.com.gt</td>
+            </tr>
+            <tr>
+                <td>5290-24-11245</td>
+                <td>Estudiante Prueba</td>
+                <td>estudiante@micorreo.com.gt</td>
+            </tr>
+            <tr id="tr4">
+                <td>5290-24-10211</td>
+                <td>José Arévalo</td>
+                <td>jarevalo@mail.com</td>
+            </tr>
+        </tbody>
+    </table>
+    <script>
+        $(document).ready(function () {
+            //codigo (variables, métodos, etc de jquery)
+            $("#tr4").hide();//esconde hasta que el usuario da click
+            $("#btnAgregar").click(function () {//cuando se le de clic al boton_mostrar va a hacer la siguiente función
+                //.show ("slow") o colocar tiempo en milisegundos
+                //1000= 1 segundo
+                $("#tr4").show(500);//mostrar
+
+            });
+            $("#btnEliminar").click(function () {
+                $("#tr4").hide(300);//esconder
+            });
+
+        }); 
+    </script>
+    
+    <footer>
+        Creado por Daylin Yol
+    </footer>
+</body>
+
+</html>
